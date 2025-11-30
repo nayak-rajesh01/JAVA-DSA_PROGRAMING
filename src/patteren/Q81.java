@@ -1,4 +1,11 @@
 /*
+Enter the Number of Rows
+5
+        1
+      2 3 2
+    3 4 5 4 3
+  4 5 6 7 6 5 4
+5 6 7 8 9 8 7 6 5
 */
 package patteren;
 import java.util.Scanner;
@@ -20,23 +27,14 @@ public class Q81 {
             for (int s = 1; s <= n - i; s++) {
                 System.out.print("  ");
             }
-
-            int num = n-(n-i);
-            int peak = i;               // midpoint index
-
-            for (int j = 1; j <= 2 * i - 1; j++) {
-
-                if(j<=peak){
-                    System.out.print(num + " ");
-                    num++;
-                }
-                else {
-                    num--;
-                    System.out.print(num + " ");
-                }
-
+            // PRINT increasing numbers
+            for (int j = i; j < i + i; j++) {
+                System.out.print(j + " ");
             }
-
+            // PRINT decreasing numbers
+            for (int j = i + i - 2; j >= i; j--) {
+                System.out.print(j + " ");
+            }
             System.out.println();
         }
     }

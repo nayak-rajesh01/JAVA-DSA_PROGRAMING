@@ -2,7 +2,7 @@
 setlocal
 
 REM Creates Q41.java..Q50.java with a main template (1st for Start, 2nd for step, 3rd for end)
-for /L %%i in (81,1,90) do (
+for /L %%i in (91,1,100) do (
   >"Q%%i.java" echo /*
   >>"Q%%i.java" echo */
   >>"Q%%i.java" echo package patteren;
